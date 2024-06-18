@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import React from 'react'
+import Link from 'next/link'
+
 import AmulGirl from "@/assets/amulgirl.png"
 import Lassi from "@/assets/lassi.png"
 import Cheese from "@/assets/cheese.png"
@@ -8,12 +9,29 @@ import Butter from "@/assets/butter.png"
 import Dahi from "@/assets/dahi.png"
 import Milk from "@/assets/milk.png"
 import IceCream from "@/assets/icecream.png"
+import Texture from "@/assets/texture.png"
+import Gradient from './Gradient'
+
 
 function Products() {
   return (
     <section className='text-white py-10 min-h-screen'>
-        <p className='text-center text-5xl md:text-8xl font-light'>
-            OVER <span className='font-bold'>27+</span> BRANDS
+        <p className='relative text-center text-5xl md:text-8xl font-light'>
+            OVER <span className='font-bold bg-gradient-to-r bg-clip-text text-transparent from-[#283BF8] to-[#E9EBFF]'>27+</span> BRANDS
+            <Image
+                src={Texture.src}
+                height={Texture.height}
+                width={Texture.width}
+                alt=""
+                className='absolute top-0'
+            />
+            <Image
+                src={Texture.src}
+                height={Texture.height}
+                width={Texture.width}
+                alt=""
+                className='absolute top-0 right-0'
+            />
         </p>
         <p className='text-center text-4xl mt-5 font-extralight'>FANS FAV <span className='font-medium'>GENERAL</span> NEW</p>
         <div className='relative mx-10 py-36 hidden md:block'>
@@ -26,6 +44,28 @@ function Products() {
             <ProductItem img={Milk} text="MILK" style="text-5xl text-[#1D2BCF] !bg-[#1D2BCF] left-[32%] top-[90%] !h-[15vw] !w-[15vw]"/>
             <ProductItem img={Dahi} text="DAHI" style="text-4xl !gap-1 text-[#040A4F] !bg-[#040A4F] left-[18%] top-[99%] !h-[14vw] !w-[14vw]"/>
             <ProductItem img={IceCream} text="ICE-CREAM" style="text-3xl text-[#040A4F] !bg-[#040A4F] left-[52%] top-[85%] !h-[20vw] !w-[20vw]"/>
+            <div className='absolute right-10 top-[150%]'>
+                <p className='text-2xl tracking-widest font-light mb-2'>ORDER NOW</p>
+                <Link href="" className="bg-[#212FBF] size-fit md:px-10 px-6 text-white md:py-2 items-center justify-center md:right-20 sm:right-10  flex gap-3 rounded-tr-[2rem] rounded-bl-[2rem] shadow-xl">
+                    <div className="md:text-base sm:text-sm text-xs">
+                        <p>GO</p>
+                        <p>TO</p>
+                    </div>
+                    <p className="md:text-4xl font-semibold sm:text-xl text-lg">STORE</p>   
+                    <Gradient />
+                </Link>
+            </div>
+            <div className='absolute left-16 top-[180%]'>
+                <p className='text-2xl tracking-widest font-light mb-2'>MAKE SOMETHING</p>
+                <Link href='' className="bg-[#212FBF] size-fit md:px-10 px-6 text-white md:py-2 items-center justify-center md:right-20 sm:right-10  flex gap-3 rounded-tr-[2rem] rounded-bl-[2rem] shadow-xl">
+                    <div className="md:text-base sm:text-sm text-xs">
+                        <p>GO</p>
+                        <p>TO</p>
+                    </div>
+                    <p className="md:text-4xl font-semibold sm:text-xl text-lg">RECIPE</p>
+                    <Gradient />   
+                </Link>
+            </div>
             <div className='absolute flex flex-col items-center justify-center right-0 bg-[#040A4F] !h-[8vw] !w-[8vw]'>
                 <p className='text-5xl font-bold'>20</p>
                 <p className='text-xl font-light'>others</p>
@@ -47,6 +87,23 @@ function Products() {
             <ProductItem img={Dahi} text="DAHI" style="!relative text-4xl !gap-1 text-[#040A4F] !bg-[#040A4F]"/>
             <ProductItem img={IceCream} text="ICE-CREAM" style="!relative text-3xl text-[#040A4F] !bg-[#040A4F]"/>
         </div>
+        <div className='flex justify-between gap-10 mx-10 mt-5 md:hidden'>
+                <Link href="" className="bg-[#212FBF] flex-1 size-fit md:px-10 px-6 text-white md:py-2 items-center justify-center md:right-20 sm:right-10  flex gap-3 rounded-tr-[2rem] rounded-bl-[2rem] shadow-xl">
+                    <div className="md:text-base sm:text-sm text-xs">
+                        <p>GO</p>
+                        <p>TO</p>
+                    </div>
+                    <p className="md:text-4xl font-semibold sm:text-xl text-lg">STORE</p>   
+                </Link>
+                <Link href='' className="bg-[#212FBF] flex-1 size-fit md:px-10 px-6 text-white md:py-2 items-center justify-center md:right-20 sm:right-10  flex gap-3 rounded-tr-[2rem] rounded-bl-[2rem] shadow-xl">
+                    <div className="md:text-base sm:text-sm text-xs">
+                        <p>GO</p>
+                        <p>TO</p>
+                    </div>
+                    <p className="md:text-4xl font-semibold sm:text-xl text-lg">RECIPE</p>   
+                </Link>
+        </div>
+            
     </section>
   )
 }

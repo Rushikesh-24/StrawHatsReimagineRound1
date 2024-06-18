@@ -19,7 +19,7 @@ const koulen = Koulen({
 
 function OurStory() {
   return (
-    <section className='text-white text-lg md:text-xl pb-20 pt-10 w-screen overflow-hidden'>
+    <section className='text-white text-lg md:text-xl pb-20 pt-10 w-full'>
         <p className='text-center text-5xl md:text-7xl -mb-5'>
             <span className={`${myFont.className} text-[10rem] md:text-[12rem] tracking-widest -mr-10`}>our </span> 
             <span className='relative font-semibold uppercase'>
@@ -88,7 +88,7 @@ function GradientTri() {
         <ellipse cx="163.5" cy="246.5" rx="295.5" ry="126.5" fill="#283BF8"/>
         </g>
         <defs>
-            <filter id="filter0_f_323_144" x="-252" y="0" width="831" height="493" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <filter id="filter0_f_323_144" x="-252" y="0" width="831" height="493" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
                 <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
                 <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_323_144"/>
