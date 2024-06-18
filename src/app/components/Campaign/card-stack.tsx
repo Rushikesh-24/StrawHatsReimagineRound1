@@ -51,7 +51,8 @@ export const CardStack = ({
               zIndex: cards.length - index,
             }}
           >
-            <img src={card.lineImg} alt="camImg" className="size-full"/>
+            <img src={card.lineImg} alt="camImg" className="size-full hover:opacity-0"/>
+            <img src={card.selectImg} alt="camImg" className="size-full absolute hover:opacity-100 opacity-0 transition-all"/>
           </motion.div>
         );
       })}
