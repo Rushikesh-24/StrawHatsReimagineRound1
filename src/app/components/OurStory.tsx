@@ -88,7 +88,7 @@ function GradientTri() {
         <ellipse cx="163.5" cy="246.5" rx="295.5" ry="126.5" fill="#283BF8"/>
         </g>
         <defs>
-            <filter id="filter0_f_323_144" x="-252" y="0" width="831" height="493" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <filter id="filter0_f_323_144" x="-252" y="0" width="831" height="493" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
                 <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
                 <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_323_144"/>
