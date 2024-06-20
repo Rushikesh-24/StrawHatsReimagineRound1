@@ -11,7 +11,7 @@ export const CAMPAIGNS = [
     },
     {
         id: 3,
-        lineImg: "/campaign1line.jpg",
-        selectImg: "/campaign1norm.png"
+        lineImg: "/campaign3line.png",
+        selectImg: "/campaign3norm.png"
     }
 ]
