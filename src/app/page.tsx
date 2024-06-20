@@ -1,3 +1,4 @@
+import Campaign from "./components/Campaign";
 import Footer from "./components/Footer";
 import OurStory from "./components/OurStory";
 import Products from "./components/Products";
@@ -13,6 +14,7 @@ export default function Home() {
       <Products />
       <OurStory />
       <MilkMan/>
+    <Campaign />
       <Footer/>
     </main>
   );
