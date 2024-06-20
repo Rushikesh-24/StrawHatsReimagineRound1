@@ -12,6 +12,7 @@ export default function Home() {
     <Moo/>
     <OurStory />
     <MilkMan/>
+    <Campaign />
     <Footer/>
     </>
   );
