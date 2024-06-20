@@ -9,8 +9,9 @@ const pacifico = Pacifico({
 
 const Footer = () => {
   return (
-    <div className="w-screen h-[60vh] flex flex-col gap-2 overflow-hidden">
-      <div className="h-4/5 w-full  flex text-white md:gap-0 gap-5">      
+    <div className="w-full h-[60vh] flex flex-col gap-2">
+      <div className="h-4/5 w-full  flex text-white md:gap-0 gap-5">
+      
       <div className="w-1/3 h-full flex  items-center md:flex-row flex-col">
       <div className="w-1/4 md:h-full h-1/5 flex items-center justify-center md:text-3xl lg:text-4xl font-semibold md:font-normal">
       <p className="transform md:-rotate-90 whitespace-nowrap">KNOW US</p>
@@ -119,13 +120,12 @@ const Footer = () => {
             </svg>
           </a>
         </div>
-        <div className="w-1/3 h-full flex justify-center items-center flex-col text-xs sm:text-sm md:text-lg gap-2 relative">
+        <div className="w-1/3 h-full flex justify-center items-center flex-col text-xs sm:text-sm md:text-lg gap-2">
           <h2
-            className={`${pacifico.className} lg:text-3xl md:text-2xl text-xl text-transparent bg-gradient-to-r from-[#868EE1] to-[#283BF8] bg-clip-text h-1/3 md:h-1/2 lg:h-full flex justify-center items-center z-0`}
+            className={`${pacifico.className} lg:text-3xl md:text-2xl text-xl text-transparent bg-gradient-to-r from-[#868EE1] to-[#283BF8] bg-clip-text h-1/3 md:h-1/2 lg:h-full flex justify-center items-center`}
           >
             Say Hello
           </h2>
-          <GradientVer/>
           <h2 className="font-semibold text-white">@amul.coop</h2>
         </div>
         <div className=" w-1/3 h-full flex justify-between items-center lg:px-16 md:px-14 sm:px-12 px-4">
@@ -165,22 +165,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-
-function GradientVer() {
-  return (
-    <svg className='absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 size-[1000%] -z-20'  width="1211" height="1591" viewBox="0 0 1211 1591" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g filter="url(#filter0_f_323_150)">
-            <circle cx="795.5" cy="795.5" r="275.5" fill="#283BF8"/>
-        </g>
-        <defs>
-            <filter id="filter0_f_323_150" x="0.191711" y="0.191711" width="1590.62" height="1590.62" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                <feGaussianBlur stdDeviation="259.904" result="effect1_foregroundBlur_323_150"/>
-            </filter>
-        </defs>
-    </svg>
-
-  )
-}

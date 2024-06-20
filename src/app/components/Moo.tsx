@@ -7,7 +7,7 @@ import cowGlass from "./../../../public/mooglass.png";
 import { motion } from "framer-motion";
 const Moo = () => {
   return (
-    <div className="md:h-screen h-[50vh] w-screen flex justify-end items-center md:items-start overflow-hidden relative">
+    <div className="md:h-screen h-[50vh] w-full flex justify-end items-center md:items-start relative">
       <div className="relative">
         <Image
           src={cow}
