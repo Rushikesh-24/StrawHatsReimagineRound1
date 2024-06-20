@@ -9,7 +9,7 @@ import MilkMan from "./components/MilkMan";
 
 export default function Home() {
   return (
-    <main className=" max-w-[2000px] mx-auto">
+    <main className=" max-w-[2000px] mx-auto overflow-hidden">
       <Moo/>
       <Products />
       <OurStory />

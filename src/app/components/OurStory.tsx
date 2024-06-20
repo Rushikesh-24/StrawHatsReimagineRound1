@@ -105,8 +105,8 @@ function GradientVer() {
             <circle cx="795.5" cy="795.5" r="275.5" fill="#283BF8"/>
         </g>
         <defs>
-            <filter id="filter0_f_323_150" x="0.191711" y="0.191711" width="1590.62" height="1590.62" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <filter id="filter0_f_323_150" x="0.191711" y="0.191711" width="1590.62" height="1590.62" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
                 <feGaussianBlur stdDeviation="259.904" result="effect1_foregroundBlur_323_150"/>
             </filter>

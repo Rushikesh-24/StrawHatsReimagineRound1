@@ -9,7 +9,7 @@ import Gradient from "./Gradient";
 
 const MilkMan = () => {
   return (
-    <div className="md:h-screen h-[60vh] w-full flex justify-start items-center md:items-start relative py-20">
+    <div className="md:h-screen h-[60vh] flex justify-start items-center md:items-start relative py-20 overflow-hidden">
       <div className="relative md:h-5/6 h-4/6 w-1/2 flex justify-center items-center">
         <Image
           src={glass}

@@ -165,3 +165,22 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
+function GradientVer() {
+  return (
+    <svg className='absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 size-[1000%] -z-20'  width="1211" height="1591" viewBox="0 0 1211 1591" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_f_323_150)">
+            <circle cx="795.5" cy="795.5" r="275.5" fill="#283BF8"/>
+        </g>
+        <defs>
+            <filter id="filter0_f_323_150" x="0.191711" y="0.191711" width="1590.62" height="1590.62" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                <feGaussianBlur stdDeviation="259.904" result="effect1_foregroundBlur_323_150"/>
+            </filter>
+        </defs>
+    </svg>
+
+  )
+}
