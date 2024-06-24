@@ -10,7 +10,7 @@ const panchang = localFont({
 
 const Campaign = () => {
   return (
-    <div className="w-screen sm:h-[80vh] h-[60vh] flex sm:flex-row flex-col sm:justify-between sm:items-center sm:mb-14 sm:pt-0 pt-10 overflow-hidden">
+    <div className="w-screen sm:h-[80vh] h-[60vh] flex sm:flex-row flex-col sm:justify-between sm:items-center sm:mb-14 sm:pt-0 pt-10">
       <div className="flex items-center sm:h-full md:gap-10 sm:gap-5">
         <div className="lg:h-[45vh] sm:h-[31vh] h-20 flex justify-center items-center">
           <img

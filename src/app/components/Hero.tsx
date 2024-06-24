@@ -13,7 +13,7 @@ import IceCream from "@/assets/icecream.png"
 const Hero = () => {
   return (
     <div className="w-full h-screen flex flex-col justify-center items-center text-white relative">
-      <div className="bg-[#212FBF] h-[15vw] w-[15vw] max-w-[700px] max-h-[700px] absolute rounded-full left-10 bottom-[25%] flex items-end justify-end">
+      <div className="hidden md:flex bg-[#212FBF] h-[15vw] w-[15vw] max-w-[700px] max-h-[700px] absolute rounded-full left-10 bottom-[25%] items-end justify-end">
         <Image 
           src={Milk.src}
           height={Milk.height-10}
@@ -21,7 +21,7 @@ const Hero = () => {
           alt="Milk"
         />
       </div>
-      <div className="bg-[#212FBF] h-[12vw] w-[12vw] max-w-[400px] max-h-[400px] absolute rounded-full left-[16%] top-[12%] flex items-end justify-center">
+      <div className="hidden md:flex bg-[#212FBF] h-[12vw] w-[12vw] max-w-[400px] max-h-[400px] absolute rounded-full left-[16%] top-[12%] items-end justify-center">
         <Image 
           src={IceCream.src}
           height={IceCream.height-60}
@@ -30,7 +30,7 @@ const Hero = () => {
           alt="Ice Cream"
         />
       </div>
-      <div className="bg-[#212FBF] h-[14vw] w-[14vw] max-w-[600px] max-h-[600px] absolute rounded-full right-[10%] top-[12%] flex items-center justify-end">
+      <div className="hidden md:flex bg-[#212FBF] h-[14vw] w-[14vw] max-w-[600px] max-h-[600px] absolute rounded-full right-[10%] top-[12%] items-center justify-end">
         <Image 
           src={Butter.src}
           height={Butter.height-60}
@@ -39,7 +39,7 @@ const Hero = () => {
           alt="Butter"
         />
       </div>
-      <div className="bg-[#212FBF] h-[8vw] w-[8vw] max-w-[300px] max-h-[300px] absolute rounded-full right-[22%] bottom-[36%] flex items-start justify-center">
+      <div className="hidden md:flex bg-[#212FBF] h-[8vw] w-[8vw] max-w-[300px] max-h-[300px] absolute rounded-full right-[22%] bottom-[36%] items-start justify-center">
         <Image 
           src={Lassi.src}
           height={Lassi.height}
