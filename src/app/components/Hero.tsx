@@ -1,19 +1,63 @@
 import React from "react";
 import { TextGenerateEffect } from "./TextGenerate";
+import Image from "next/image";
+import AmulGirl from "@/assets/amulgirl.png"
+import Lassi from "@/assets/lassi.png"
+import Cheese from "@/assets/cheese.png"
+import Paneer from "@/assets/Paneer.png"
+import Butter from "@/assets/butter.png"
+import Dahi from "@/assets/dahi.png"
+import Milk from "@/assets/milk.png"
+import IceCream from "@/assets/icecream.png"
 
 const Hero = () => {
   return (
-    <div className="w-screen h-screen flex flex-col justify-center items-center text-white relative">
+    <div className="w-full h-screen flex flex-col justify-center items-center text-white relative">
+      <div className="bg-[#212FBF] h-[15vw] w-[15vw] max-w-[700px] max-h-[700px] absolute rounded-full left-10 bottom-[25%] flex items-end justify-end">
+        <Image 
+          src={Milk.src}
+          height={Milk.height-10}
+          width={Milk.width-10}
+          alt="Milk"
+        />
+      </div>
+      <div className="bg-[#212FBF] h-[12vw] w-[12vw] max-w-[400px] max-h-[400px] absolute rounded-full left-[16%] top-[12%] flex items-end justify-center">
+        <Image 
+          src={IceCream.src}
+          height={IceCream.height-60}
+          width={IceCream.width-60}
+          className="absolute top-16"
+          alt="Ice Cream"
+        />
+      </div>
+      <div className="bg-[#212FBF] h-[14vw] w-[14vw] max-w-[600px] max-h-[600px] absolute rounded-full right-[10%] top-[12%] flex items-center justify-end">
+        <Image 
+          src={Butter.src}
+          height={Butter.height-60}
+          width={Butter.width-60}
+          className="absolute left-10"
+          alt="Butter"
+        />
+      </div>
+      <div className="bg-[#212FBF] h-[8vw] w-[8vw] max-w-[300px] max-h-[300px] absolute rounded-full right-[22%] bottom-[36%] flex items-start justify-center">
+        <Image 
+          src={Lassi.src}
+          height={Lassi.height}
+          width={Lassi.width}
+          className="absolute bottom-8"
+          alt="Lassi"
+        />
+      </div>
       <div className="font-extrabold grid grid-cols-2 grid-rows-2 leading-none">
-        <div className="md:text-[15rem] text-9xl text-right">A</div>
-        <div className="md:text-[15rem] text-9xl relative text-center">
+        <div className="md:text-[18rem] text-9xl text-right">A</div>
+        <div className="md:text-[18rem] text-9xl relative text-center">
           <Gradient text={"-right-28 -top-20"} />
           U
         </div>
-        <div className="md:text-[15rem] text-9xl relative">
+        <div className="md:text-[18rem] text-9xl relative">
           <Gradient text={"-top-20 -right-28"} />
           M</div>
-        <div className="md:text-[15rem] text-9xl text-center">L</div>
+        <div className="md:text-[18rem] text-9xl text-center">L</div>
       </div>
       <div className="text-center w-3/5 md:mt-0 mt-10">
         <TextGenerateEffect
