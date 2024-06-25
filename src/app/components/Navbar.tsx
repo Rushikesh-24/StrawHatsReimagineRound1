@@ -8,7 +8,7 @@ import Link from "next/link"
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <nav className="bg-black bg-opacity-20 backdrop-blur-2xl sticky z-10 top-0 text-white p-4 py-8 md:py-6">
+    <nav className="bg-black bg-opacity-20 backdrop-blur-2xl sticky z-30 top-0 text-white p-4 py-8 md:py-6">
       <div className="mx-10 flex justify-center items-center">
         <div className="absolute left-10">
             <Image 
