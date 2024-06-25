@@ -9,10 +9,12 @@ import Butter from "@/assets/butter.png"
 import Dahi from "@/assets/dahi.png"
 import Milk from "@/assets/milk.png"
 import IceCream from "@/assets/icecream.png"
+import { ModelViewer } from "./Model";
 
 const Hero = () => {
   return (
     <div className="w-full h-screen flex flex-col justify-center items-center text-white relative">
+      <ModelViewer/>
       <div className="hidden md:flex bg-[#212FBF] h-[15vw] w-[15vw] max-w-[700px] max-h-[700px] absolute rounded-full left-10 bottom-[25%] items-end justify-end">
         <Image 
           src={Milk.src}
