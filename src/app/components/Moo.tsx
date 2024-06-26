@@ -12,7 +12,7 @@ const Moo = () => {
         <Image
           src={cow}
           alt="moo"
-          className="md:w-96 md:h-3/5  w-48 h-2/5 md:mt-10"
+          className="lg:h-4/5 md:w-96 md:h-3/5 md:mt-10 w-48 h-2/5 "
         />
         <svg
           className="absolute md:size-56 sm:size-36 size-28 md:-left-16 sm:-left-12 -left-8 sm:-bottom-8 -bottom-4"
@@ -28,7 +28,7 @@ const Moo = () => {
         </svg>
         <div className="absolute w-28 md:h-4 sm:h-3 h-2 left-0 md:top-0 -top-6 bg-white"></div>
       </div>
-      <div className="relative md:h-5/6 h-4/6 w-1/2 flex justify-center items-center">
+      <div className="relative lg:h-full md:h-5/6 h-4/6 w-1/2 flex justify-center items-center">
         <Image
           src={glass}
           alt="Glass"
