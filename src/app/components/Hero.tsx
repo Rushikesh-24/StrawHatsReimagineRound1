@@ -61,7 +61,7 @@ const Hero = () => {
           M</div>
         <div className="md:text-[18rem] text-9xl text-center">L</div>
       </div>
-      <div className="text-center w-3/5 md:mt-0 mt-10">
+      <div className="text-center w-3/5 md:mt-0 mt-10 text-white">
         <TextGenerateEffect
           words={
             "Savor the creaminess, taste the joy, and embrace the goodness of dairy. Our farm-fresh products, straight from happy cows, bring nature’s bounty to your table. Raise a glass to dairy delights!"
