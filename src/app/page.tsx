@@ -7,17 +7,23 @@ import { TextGenerateEffect } from "./components/TextGenerate";
 import MilkMan from "./components/MilkMan";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Gap from "./components/Gap";
 
 
 export default function Home() {
   return (
-    <main className=" max-w-[2000px] h-screen relative mx-auto overflow-x-hidden">
+    <main className="h-screen relative w-screen overflow-x-hidden">
       <Navbar />
       <Hero/>
+      <Gap/>
       <Moo/>
+      <Gap/>
       <Products />
+      <Gap/>
       <OurStory />
+      <Gap/>
       <MilkMan/>
+      <Gap/>
       <Campaign />
       <Footer/>
     </main>
