@@ -7,7 +7,10 @@ import milkManGlass from "./../../../public/milkManGlass.png";
 import { motion } from "framer-motion";
 import Gradient from "./Gradient";
 
+const transition = { duration: 1, delay:0.5, ease: "easeInOut" }
+
 const MilkMan = () => {
+
   return (
     <div className="lg:h-screen md:h-screen h-[60vh] flex justify-start items-center md:items-start relative my-10">
       <div className="relative lg:h-full md:h-5/6 h-4/6 w-1/2 flex justify-center items-center">
@@ -40,10 +43,13 @@ const MilkMan = () => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path
+          <motion.path
             d="M11 0V200.5C11 266.774 64.7258 320.5 131 320.5H249.5"
             stroke="white"
             strokeWidth="21"
+            initial={{ pathLength: 0 }}
+            whileInView={{ pathLength: 1 }}
+            transition={transition}
           />
         </svg>
         <div className="absolute w-28 md:h-4 sm:h-3 h-2 left-2 md:-bottom-10 -bottom-5  bg-white"></div>
