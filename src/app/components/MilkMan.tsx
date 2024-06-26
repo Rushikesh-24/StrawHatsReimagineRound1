@@ -9,8 +9,8 @@ import Gradient from "./Gradient";
 
 const MilkMan = () => {
   return (
-    <div className="md:h-screen h-[60vh] flex justify-start items-center md:items-start relative py-20">
-      <div className="relative md:h-5/6 h-4/6 w-1/2 flex justify-center items-center">
+    <div className="lg:h-screen md:h-screen h-[60vh] flex justify-start items-center md:items-start relative my-10">
+      <div className="relative lg:h-full md:h-5/6 h-4/6 w-1/2 flex justify-center items-center">
         <Image
           src={glass}
           alt="Glass"
@@ -32,7 +32,7 @@ const MilkMan = () => {
         <Image
           src={milkman}
           alt="moo"
-          className="md:w-96 md:h-3/5  w-48 h-2/5 md:mt-10"
+          className="md:w-96 md:h-3/5 lg:h-4/5 w-48 h-2/5 md:mt-10"
         />
         <svg
           className="absolute md:size-56 sm:size-36 size-28 md:top-0 -top-5 md:-right-20 sm:-right-10 -right-8 -rotate-180"
@@ -48,7 +48,7 @@ const MilkMan = () => {
         </svg>
         <div className="absolute w-28 md:h-4 sm:h-3 h-2 left-2 md:-bottom-10 -bottom-5  bg-white"></div>
       </div>
-      <div className="bg-[#212FBF] size-fit md:px-10 px-6 text-white md:py-2 items-center justify-center absolute md:right-20 sm:right-10 right-7 bottom-16 flex gap-2 rounded-tr-[2rem] rounded-bl-[2rem] shadow-xl">
+      <div className="bg-[#212FBF] size-fit md:px-10 sm:px-6 px-4 text-white md:py-2 py-1.5 items-center justify-center absolute md:right-20 sm:right-10 right-5 sm:bottom-14 bottom-4 flex gap-2 rounded-tr-[2rem] rounded-bl-[2rem] shadow-xl">
         <div className="md:text-base sm:text-sm text-xs">
           <p>GO</p>
           <p>TO</p>

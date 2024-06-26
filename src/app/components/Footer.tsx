@@ -1,5 +1,6 @@
 import React from "react";
 import { Pacifico } from "next/font/google";
+import Link from "next/link";
 
 const pacifico = Pacifico({
   weight: "400",
@@ -17,7 +18,7 @@ const Footer = () => {
       <p className="transform md:-rotate-90 whitespace-nowrap">KNOW US</p>
       </div>
       <div className="w-3/4 md:h-full md:text-left text-center h-4/5 flex flex-col justify-around text-xs md:text-base">
-        <p>About Us</p>
+        <Link href={'https://amul.com/m/about-us'}>About Us</Link>
         <p>Vission and Mission</p>
         <p>Crafting Food</p>
         <p>Nutrition</p>
@@ -29,8 +30,8 @@ const Footer = () => {
       </div>
       <div className="w-3/4 md:h-full md:text-left text-center h-4/5 flex flex-col justify-around text-xs md:text-base">
         <p>News</p>
-        <p>Press Releases</p>
-        <p>Awards</p>
+        <Link href={'https://amul.com/m/press_release'}>Press Releases</Link>
+        <Link href={'https://amul.com/m/awards'}>Awards</Link>
         <p>All Campaigns</p>
       </div>
       </div>
@@ -39,10 +40,10 @@ const Footer = () => {
       <p className="transform md:-rotate-90 whitespace-nowrap">OTHERS</p>
       </div>
       <div className="w-3/4 md:h-full md:text-left text-center h-4/5 flex flex-col justify-around text-xs md:text-base">
-        <p>Careers</p>
+        <Link href={'https://amul.com/m/careers'}>Careers</Link>
         <p>Store Locator</p>
         <p>e-Tendering</p>
-        <p>Vendor Registration</p>
+        <Link href={'https://amul.com/files/pdf/vendor_registration_form_plastic_waste_management_2023-24_11062023.pdf'}>Vendor Registration</Link>
       </div>
       </div>
       </div>

@@ -87,15 +87,15 @@ function Products() {
             <ProductItem img={Dahi} text="DAHI" style="!relative text-4xl !gap-1 text-[#040A4F] !bg-[#040A4F]"/>
             <ProductItem img={IceCream} text="ICE-CREAM" style="!relative text-3xl text-[#040A4F] !bg-[#040A4F]"/>
         </div>
-        <div className='flex justify-between gap-10 mx-10 mt-5 md:hidden'>
-                <Link href="" className="bg-[#212FBF] flex-1 size-fit md:px-10 px-6 text-white md:py-2 items-center justify-center md:right-20 sm:right-10  flex gap-3 rounded-tr-[2rem] rounded-bl-[2rem] shadow-xl">
+        <div className='flex justify-between sm:gap-10 gap-4 sm:mx-10 mx-4 mt-5 md:hidden'>
+                <Link href="" className="bg-[#212FBF] flex-1 size-fit md:px-10 sm:px-6 px-4 text-white md:py-2 items-center justify-center md:right-20 sm:right-10  flex gap-3 rounded-tr-[2rem] rounded-bl-[2rem] shadow-xl">
                     <div className="md:text-base sm:text-sm text-xs">
                         <p>GO</p>
                         <p>TO</p>
                     </div>
                     <p className="md:text-4xl font-semibold sm:text-xl text-lg">STORE</p>   
                 </Link>
-                <Link href='' className="bg-[#212FBF] flex-1 size-fit md:px-10 px-6 text-white md:py-2 items-center justify-center md:right-20 sm:right-10  flex gap-3 rounded-tr-[2rem] rounded-bl-[2rem] shadow-xl">
+                <Link href='' className="bg-[#212FBF] flex-1 size-fit md:px-10 sm:px-6 px-4 text-white md:py-2 items-center justify-center md:right-20 sm:right-10 flex gap-3 rounded-tr-[2rem] rounded-bl-[2rem] shadow-xl">
                     <div className="md:text-base sm:text-sm text-xs">
                         <p>GO</p>
                         <p>TO</p>
