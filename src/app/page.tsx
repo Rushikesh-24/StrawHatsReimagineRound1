@@ -9,12 +9,14 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Gap from "./components/Gap";
 import MooText from "./components/MooText";
+import Navbar2 from "./components/Navbar2";
 
 
 export default function Home() {
   return (
     <main className="h-screen relative w-screen overflow-x-hidden">
-      <Navbar />
+      <Navbar2/>
+      {/* <Navbar /> */}
       <Hero/>
       <Gap/>
       <Moo/>

@@ -18,7 +18,7 @@ export default function Navbar() {
                 alt=""
             />
         </div>
-        <div className="hidden text-xl md:flex space-x-6">
+        <div className="hidden text-xl md:flex space-x-6"> 
           <Link href="#" className="hover:text-gray-300">
             Home
           </Link>
