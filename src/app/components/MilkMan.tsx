@@ -12,7 +12,7 @@ const transition = { duration: 1, delay:0.5, ease: "easeInOut" }
 const MilkMan = () => {
 
   return (
-    <div className="lg:h-screen md:h-screen h-[60vh] flex justify-start items-center md:items-start relative my-10">
+    <div className="lg:h-screen md:h-screen h-[60vh] flex justify-start items-center md:items-start relative my-10 sm:mx-0 mr-5">
       <div className="relative lg:h-full md:h-5/6 h-4/6 w-1/2 flex justify-center items-center">
         <Image
           src={glass}
@@ -22,10 +22,10 @@ const MilkMan = () => {
         <Image
           src={milkManGlass}
           alt="Mooglass"
-          className="absolute w-10/12 h-full  z-0 object-center"
+          className="absolute w-10/12 h-full z-0 object-center"
         />
         <div className="z-20 flex h-full w-10/12 items-center justify-around flex-col text-white">
-          <h1 className="lg:text-8xl md:text-6xl sm:text-5xl text-4xl font-light md:leading-tight">
+          <h1 className="lg:text-8xl md:text-6xl sm:text-5xl text-2xl font-light md:leading-tight">
             BE PART OF THE
             <span className="line-clamp-2 font-semibold">AMUL FAMILY</span>
           </h1>
@@ -52,7 +52,7 @@ const MilkMan = () => {
             transition={transition}
           />
         </svg>
-        <div className="absolute w-28 md:h-4 sm:h-3 h-2 left-2 md:-bottom-10 -bottom-5  bg-white"></div>
+        <div className="absolute w-28 md:h-4 sm:h-3 h-2 left-2 md:-bottom-10 -bottom-5 bg-white"></div>
       </div>
       <div className="bg-[#212FBF] size-fit md:px-10 sm:px-6 px-4 text-white md:py-2 py-1.5 items-center justify-center absolute md:right-20 sm:right-10 right-5 sm:bottom-14 bottom-4 flex gap-2 rounded-tr-[2rem] rounded-bl-[2rem] shadow-xl">
         <div className="md:text-base sm:text-sm text-xs">
