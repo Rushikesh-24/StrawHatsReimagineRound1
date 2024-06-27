@@ -69,7 +69,7 @@ function OurStory() {
               />
             </div>
             <div className="relative lg:absolute flex flex-wrap sm:flex-nowrap gap-5 text-left sm:text-right justify-center lg:justify-end bottom-0 right-0 mt-20 md:mt-0">
-              <div className="order-2 sm:order-1">
+              <div className="order-2 sm:order-1 sm:ml-0 ml-4">
                 <p className="text-xl md:text-2xl lg:text-3xl font-medium">
                   Verghese Kurien
                 </p>

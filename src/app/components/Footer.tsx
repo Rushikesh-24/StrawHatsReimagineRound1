@@ -11,7 +11,7 @@ const pacifico = Pacifico({
 const Footer = () => {
   return (
     <div className="w-full h-[60vh] flex flex-col gap-2">
-      <div className="h-4/5 w-full  flex text-white md:gap-0 gap-5">
+      <div className="h-4/5 w-full  flex text-white md:gap-0 gap-1">
       
       <div className="w-1/3 h-full flex  items-center md:flex-row flex-col">
       <div className="w-1/4 md:h-full h-1/5 flex items-center justify-center md:text-3xl lg:text-4xl font-semibold md:font-normal">
