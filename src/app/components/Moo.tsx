@@ -6,6 +6,8 @@ import glass from "./../../../public/glass.png";
 import cowGlass from "./../../../public/mooglass.png";
 import { motion } from "framer-motion";
 const Moo = () => {
+  const transition = { duration: 1, delay:0.5, ease: "easeInOut" }
+
   return (
     <div className="md:h-screen h-[60vh] w-full flex justify-end items-center md:items-start relative py-10 overflow-visible">
       <div className="relative">
@@ -20,10 +22,13 @@ const Moo = () => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path
+          <motion.path
             d="M11 0V200.5C11 266.774 64.7258 320.5 131 320.5H249.5"
             stroke="white"
             strokeWidth="21"
+            initial={{ pathLength: 0 }}
+            whileInView={{ pathLength: 1 }}
+            transition={transition}
           />
         </svg>
         <div className="absolute w-28 md:h-4 sm:h-3 h-2 left-0 md:top-0 -top-6 bg-white"></div>
