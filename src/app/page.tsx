@@ -8,6 +8,7 @@ import MilkMan from "./components/MilkMan";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Gap from "./components/Gap";
+import MooText from "./components/MooText";
 
 
 export default function Home() {
@@ -17,11 +18,10 @@ export default function Home() {
       <Hero/>
       <Gap/>
       <Moo/>
-      <Gap/>
+      <MooText />
       <Products />
       <Gap/>
       <OurStory />
-      <Gap/>
       <MilkMan/>
       <Gap/>
       <Campaign />
