@@ -39,7 +39,7 @@ function MeshComponent() {
 
 export const ModelViewer: React.FC = () => {
   return (
-    <div className="md:flex justify-center items-center h-screen w-screen hidden absolute z-20">
+    <div className="md:flex justify-center items-center lg:h-screen lg:w-screen md:w-[80vw] md:h-[80vh] hidden absolute z-20 md:top-0 lg:-top-20">
       <Canvas camera={{ position: [20, 46, 100], fov: 14 }}> 
         {/* Change this camera position for different position  */}
         <Suspense>

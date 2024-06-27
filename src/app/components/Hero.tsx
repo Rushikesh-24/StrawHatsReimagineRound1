@@ -62,9 +62,9 @@ const Hero = () => {
       <div className="md:hidden h-3/4 w-full font-extrabold leading-none flex flex-col justify-end items-end relative">
         <Gradient text={"-right-28 -top-20"} />
         <div className="size-full relative z-20">
-        <div className="text-[250px] absolute top-0 right-32">A</div>
-        <div className="text-[195px] absolute top-40 right-8">M</div>
-        <div className="text-[225px] absolute bottom-40 right-[8.4rem] z-20">U</div>
+        <div className="text-[250px] absolute -top-10 right-32">A</div>
+        <div className="text-[200px] absolute top-28 right-8 z-30">M</div>
+        <div className="text-[231px] absolute bottom-40 right-[8.4rem] z-20">U</div>
         <div className="text-[215px] absolute bottom-16 right-1">L</div>
         </div>
         <Gradient text={"top-4 -right-96"} />
