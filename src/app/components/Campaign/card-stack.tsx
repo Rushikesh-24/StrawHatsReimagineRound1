@@ -38,6 +38,13 @@ export const CardStack = ({
     }, 10000);
   };
 
+  const changeActiveCard = (index:number) =>{
+    const cardArr = [...cards]
+    const newActive = cardArr[index];
+    const newArray = cardArr.filter((element,i)=>i !== index)
+    setCards([newActive, ...newArray])
+  }
+
   return (
     <div className="relative h-[60vh] lg:w-80 md:h-60 md:w-60 flex justify-center">
       {cards.map((card, index) => {
@@ -50,6 +57,7 @@ export const CardStack = ({
               scale: 1 - index * SCALE_FACTOR,
               zIndex: cards.length - index,
             }}
+            onClick={(e)=>changeActiveCard(index)}
           >
             <img src={card.lineImg} alt="camImg" className="size-full hover:opacity-0"/>
             <img src={card.selectImg} alt="camImg" className="size-full absolute hover:opacity-100 opacity-0 transition-all"/>
