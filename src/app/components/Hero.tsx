@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import { TextGenerateEffect } from "./TextGenerate";
 import Image from "next/image";
@@ -12,6 +13,28 @@ import { ModelViewer } from "./Model";
 import { motion } from "framer-motion";
 
 const Hero = () => {
+  const fadeInVariant = {
+    hidden: { opacity: 0 },
+    visible: (i: number) => ({
+      opacity: 1,
+      transition: {
+        delay: i * 0.3,
+        duration: 0.5,
+        ease:'easeInOut'
+      },
+    }),
+  };
+  const imageFadeInVariant = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: 2, 
+        duration: 0.5,
+        ease:'easeInOut'
+      },
+    },
+  };
   return (
     <div className="w-full h-screen flex flex-col justify-center items-center text-white relative">
       <ModelViewer />
@@ -61,18 +84,71 @@ const Hero = () => {
         <div className="md:text-[18rem] text-9xl text-center">L</div>
       </div>
       <div className="md:hidden min-h-[40rem] w-full font-extrabold leading-none flex flex-col justify-end items-end relative">
-        <Gradient text={"-right-28 -top-20"} />
-        <div className="size-full relative z-20">
-        <div className="text-[250px] absolute top-0 right-36">A</div>
-        <div className="text-[195px] absolute top-40 right-8">M</div>
-        <div className="text-[225px] absolute bottom-[20%] right-[8.4rem] z-20">U</div>
-        <div className="text-[215px] absolute bottom-[5%] right-0">L</div>
-        </div>
-        <Gradient text={"top-4 -right-96"} />
-      <Image src={group} alt="Products" className="z-20 w-64 -bottom-10 left-24 absolute"/>
-      <Image src={glassOfMilk} alt="milkGlass" className="absolute w-52 z-20 top-0"/>
-      <Image src={milkSplash} alt="milksplash" className="absolute z-10 w-96 -bottom-10 right-0"/>
+      <Gradient text={"-right-28 -top-20"} />
+      <div className="size-full relative z-20">
+        <motion.div
+          className="text-[250px] absolute top-0 right-36"
+          custom={0}
+          initial="hidden"
+          animate="visible"
+          variants={fadeInVariant}
+        >
+          A
+        </motion.div>
+        <motion.div
+          className="text-[195px] absolute top-40 right-8"
+          custom={1}
+          initial="hidden"
+          animate="visible"
+          variants={fadeInVariant}
+        >
+          M
+        </motion.div>
+        <motion.div
+          className="text-[225px] absolute bottom-[20%] right-[8.4rem] z-20"
+          custom={2}
+          initial="hidden"
+          animate="visible"
+          variants={fadeInVariant}
+        >
+          U
+        </motion.div>
+        <motion.div
+          className="text-[215px] absolute bottom-[5%] right-0"
+          custom={3}
+          initial="hidden"
+          animate="visible"
+          variants={fadeInVariant}
+        >
+          L
+        </motion.div>
       </div>
+      <Gradient text={"top-4 -right-96"} />
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={imageFadeInVariant}
+        className="z-20 w-64 -bottom-10 left-24 absolute"
+      >
+        <Image src={group} alt="Products" className="" />
+      </motion.div>
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={imageFadeInVariant}
+        className="absolute w-52 z-20 top-0"
+      >
+        <Image src={glassOfMilk} alt="milkGlass" className="" />
+      </motion.div>
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={imageFadeInVariant}
+        className="absolute z-10 w-96 -bottom-10 right-0"
+      >
+        <Image src={milkSplash} alt="milksplash" className="" />
+      </motion.div>
+    </div>
       <div className="text-center h-1/4 w-4/5 md:mt-20 mt-10 text-white text-lg">
         <TextGenerateEffect
           words={
