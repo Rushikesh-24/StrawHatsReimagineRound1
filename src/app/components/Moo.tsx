@@ -66,7 +66,7 @@ const Moo = () => {
         </div>
         <GradientVer />
       </motion.div>
-      <motion.div className="absolute z-10 text-white lg:bottom-10 lg:left-16 md:bottom-30 md:left-32  md:w-1/3 bottom-0 md:p-0 px-4 w-full md:text-right md:text-2xl text-xs text-center"
+      <motion.div className="absolute z-10 text-white lg:bottom-0 lg:left-16 md:bottom-30 md:left-32  md:w-1/3 bottom-0 md:p-0 px-4 w-full md:text-right md:text-2xl text-xs text-center"
       initial={{y:0,x:-50,opacity:0}}
       whileInView={{y:0,x:0,opacity:1}}
       transition={{duration:1,delay:0.2,ease:'easeInOut'}}
