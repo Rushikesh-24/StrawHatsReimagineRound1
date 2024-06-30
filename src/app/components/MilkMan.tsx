@@ -7,16 +7,19 @@ import milkManGlass from "./../../../public/milkManGlass.png";
 import { motion } from "framer-motion";
 import Gradient from "./Gradient";
 
-const transition = { duration: 1, delay:0.5, ease: "easeInOut" }
+const transition = { duration: 1, delay: 0.5, ease: "easeInOut" };
 
 const MilkMan = () => {
-
   return (
-    <div className="lg:h-screen md:h-screen h-[60vh] flex justify-start items-center md:items-start relative my-10 sm:mx-0 mr-5" id="Career">
-      <motion.div className="relative lg:h-full md:h-5/6 h-4/6 w-1/2 flex justify-center items-center"
-      initial={{y:0,x:-50,opacity:0}}
-      whileInView={{y:0,x:0,opacity:1}}
-      transition={{duration:1,delay:0.3,ease:'easeInOut'}}
+    <div
+      className="lg:h-screen md:h-screen h-[60vh] flex justify-start items-center md:items-start relative my-10 sm:mx-0 mr-5"
+      id="Career"
+    >
+      <motion.div
+        className="relative lg:h-full md:h-5/6 h-4/6 w-1/2 flex justify-center items-center"
+        initial={{ y: 0, x: -50, opacity: 0 }}
+        whileInView={{ y: 0, x: 0, opacity: 1 }}
+        transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}
       >
         <Image
           src={glass}
@@ -35,10 +38,12 @@ const MilkMan = () => {
           </h1>
         </div>
       </motion.div>
-      <motion.div className="relative"
-      initial={{y:0,x:-60,opacity:0}}
-      whileInView={{y:0,x:0,opacity:1}}
-      transition={{duration:1,delay:1.3,ease:'easeInOut'}}>
+      <motion.div
+        className="relative"
+        initial={{ y: 0, x: -50, opacity: 0 }}
+        whileInView={{ y: 0, x: 0, opacity: 1 }}
+        transition={{ duration: 1, delay: 1, ease: "easeInOut" }}
+      >
         <Image
           src={milkman}
           alt="moo"
@@ -61,14 +66,20 @@ const MilkMan = () => {
         </svg>
         <div className="absolute w-28 md:h-4 sm:h-3 h-2 left-2 md:-bottom-10 -bottom-5 bg-white"></div>
       </motion.div>
-      <div className="bg-[#212FBF] size-fit md:px-10 sm:px-6 px-4 text-white md:py-2 py-1.5 items-center justify-center absolute md:right-20 sm:right-10 right-5 sm:bottom-14 bottom-4 flex gap-2 rounded-tr-[2rem] rounded-bl-[2rem] shadow-xl">
+      <motion.div
+        className="bg-[#212FBF] size-fit md:px-10 sm:px-6 px-4 text-white md:py-2 py-1.5 items-center justify-center absolute md:right-20 sm:right-10 right-5 sm:bottom-14 bottom-4 flex gap-2 rounded-tr-[2rem] rounded-bl-[2rem] shadow-xl"
+        initial={{ backgroundColor: "#212FBF", border: "0px", x: 50, z: -50 }}
+        whileHover={{ backgroundColor: "#040A4F", border: "2px solid white" }}
+        whileInView={{ x: 0  }}
+        transition={{ duration: 0.4, ease: "easeInOut", bounce: 2 }}
+      >
         <div className="md:text-base sm:text-sm text-xs">
           <p>GO</p>
           <p>TO</p>
         </div>
         <p className="md:text-3xl sm:text-xl text-lg">CAREERS</p>
         <Gradient />
-      </div>
+      </motion.div>
     </div>
   );
 };
