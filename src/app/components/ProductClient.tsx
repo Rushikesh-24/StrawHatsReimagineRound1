@@ -1,7 +1,17 @@
 'use client'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import { useEffect, useState } from 'react';
 export default function ProductItem({style, text, img}:{style:string, text:string, img:any}) {
+    const [classIndex, setClassIndex] = useState(0);
+    const classNames = ['text-white', 'outline-text', 'text-gray-400'];
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+          setClassIndex((prevIndex) => (prevIndex + 1) % classNames.length);
+        }, 1000); 
+    
+        return () => clearInterval(intervalId);
+      }, []);
     return (
       <motion.div className={`bg-[#1627E3] overflow-hidden flex flex-col gap-4 items-center justify-center absolute h-[40vw] w-[40vw]  ${style}`}
       initial={{y:Math.floor(Math.random() * 51),x:Math.floor(Math.random() * 51),opacity:0}}
@@ -10,7 +20,7 @@ export default function ProductItem({style, text, img}:{style:string, text:strin
       >
           {
               Array.from(new Array(5)).map((num, i)=>(
-                  <p key={i} className={`outline-text font-bold tracking-widest ${(i+1)%2!==0 && "text-white"} text-center ${text==='THE TASTE OF INDIA'?"text-lg leading-10 line-clamp-1 tracking-normal":""}`}>{text}</p>
+                  <p key={i} className={`${classNames[classIndex]} font-bold tracking-widest ${i % 2 !== 0 && classNames[classIndex]} text-center ${text === 'THE TASTE OF INDIA' ? 'text-lg leading-1 line-clamp-1 tracking-tight' : ''}`}>{text}</p>
               ))
           }
           <div className={`absolute ${text === "THE TASTE OF INDIA" && "left-0 bottom-0"}`}>
