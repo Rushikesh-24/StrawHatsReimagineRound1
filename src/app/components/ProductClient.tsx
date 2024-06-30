@@ -10,7 +10,7 @@ export default function ProductItem({style, text, img}:{style:string, text:strin
       >
           {
               Array.from(new Array(5)).map((num, i)=>(
-                  <p key={i} className={`outline-text font-bold tracking-widest ${(i+1)%2!==0 && "text-white"}`}>{text}</p>
+                  <p key={i} className={`outline-text font-bold tracking-widest ${(i+1)%2!==0 && "text-white"} text-center ${text==='THE TASTE OF INDIA'?"text-lg leading-10 line-clamp-1 tracking-normal":""}`}>{text}</p>
               ))
           }
           <div className={`absolute ${text === "THE TASTE OF INDIA" && "left-0 bottom-0"}`}>
