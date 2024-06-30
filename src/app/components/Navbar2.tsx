@@ -20,6 +20,11 @@ const Navbar2 = () => {
   };
   return (
     <nav className="h-16 z-[100] sticky top-0 flex justify-between items-center md:m-5 m-2">
+      <motion.div
+      initial={{ opacity: 0, x: -50 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.5, delay: 1 }}
+      >
       <Link href={'/'}>
       <Image
         src={Logo.src}
@@ -29,11 +34,12 @@ const Navbar2 = () => {
         className="px-10 z-[100]"
       />
       </Link>
+      </motion.div>
       <div className="relative">
         <motion.button
          initial={{ opacity: 0, x: 50 }}
          animate={{ opacity: 1, x: 0 }}
-         transition={{ duration: 0.5, delay: 1.6 }}
+         transition={{ duration: 0.5, delay: 1 }}
           onClick={handleClick}
           className="relative flex-col justify-center items-center mr-3 z-50"
         >

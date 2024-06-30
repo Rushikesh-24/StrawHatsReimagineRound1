@@ -13,7 +13,11 @@ const MilkMan = () => {
 
   return (
     <div className="lg:h-screen md:h-screen h-[60vh] flex justify-start items-center md:items-start relative my-10 sm:mx-0 mr-5" id="Career">
-      <div className="relative lg:h-full md:h-5/6 h-4/6 w-1/2 flex justify-center items-center">
+      <motion.div className="relative lg:h-full md:h-5/6 h-4/6 w-1/2 flex justify-center items-center"
+      initial={{y:0,x:-50,opacity:0}}
+      whileInView={{y:0,x:0,opacity:1}}
+      transition={{duration:1,delay:0.3,ease:'easeInOut'}}
+      >
         <Image
           src={glass}
           alt="Glass"
@@ -30,8 +34,11 @@ const MilkMan = () => {
             <span className="line-clamp-2 font-semibold">AMUL FAMILY</span>
           </h1>
         </div>
-      </div>
-      <div className="relative">
+      </motion.div>
+      <motion.div className="relative"
+      initial={{y:0,x:-50,opacity:0}}
+      whileInView={{y:0,x:0,opacity:1}}
+      transition={{duration:1,delay:1,ease:'easeInOut'}}>
         <Image
           src={milkman}
           alt="moo"
@@ -53,7 +60,7 @@ const MilkMan = () => {
           />
         </svg>
         <div className="absolute w-28 md:h-4 sm:h-3 h-2 left-2 md:-bottom-10 -bottom-5 bg-white"></div>
-      </div>
+      </motion.div>
       <div className="bg-[#212FBF] size-fit md:px-10 sm:px-6 px-4 text-white md:py-2 py-1.5 items-center justify-center absolute md:right-20 sm:right-10 right-5 sm:bottom-14 bottom-4 flex gap-2 rounded-tr-[2rem] rounded-bl-[2rem] shadow-xl">
         <div className="md:text-base sm:text-sm text-xs">
           <p>GO</p>

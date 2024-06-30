@@ -9,6 +9,7 @@ import glassOfMilk from "@/assets/glassOfMilk.png";
 import milkSplash from "@/assets/milkSplash.png";
 import group from "@/assets/group.png";
 import { ModelViewer } from "./Model";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (

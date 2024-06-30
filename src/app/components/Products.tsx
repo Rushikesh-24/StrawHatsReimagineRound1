@@ -11,6 +11,7 @@ import Milk from "@/assets/milk.png"
 import IceCream from "@/assets/icecream.png"
 import Texture from "@/assets/texture.png"
 import Gradient from './Gradient'
+import ProductItem from './ProductClient'
 
 
 function Products() {
@@ -108,25 +109,5 @@ function Products() {
   )
 }
 
-function ProductItem({style, text, img}:{style:string, text:string, img:any}) {
-  return (
-    <div className={`bg-[#1627E3] overflow-hidden flex flex-col gap-4 items-center justify-center absolute h-[40vw] w-[40vw]  ${style}`}>
-        {
-            Array.from(new Array(5)).map((num, i)=>(
-                <p key={i} className={`outline-text font-bold tracking-widest ${(i+1)%2!==0 && "text-white"}`}>{text}</p>
-            ))
-        }
-        <div className={`absolute ${text === "THE TASTE OF INDIA" && "left-0 bottom-0"}`}>
-            <Image
-                src={img.src}
-                height={img.height-40}
-                width={img.width-40}
-                alt=""
-                className=''
-            />
-        </div>
-    </div>
-  )
-}
 
 export default Products

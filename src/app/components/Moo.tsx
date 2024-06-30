@@ -6,11 +6,15 @@ import glass from "./../../../public/glass.png";
 import cowGlass from "./../../../public/mooglass.png";
 import { motion } from "framer-motion";
 const Moo = () => {
-  const transition = { duration: 1, delay:0.5, ease: "easeInOut" }
+  const transition = { duration: 1, delay:1.4, ease: "easeInOut" }
 
   return (
     <div className="md:h-screen h-[60vh] w-full flex justify-end items-center md:items-start relative py-10 overflow-visible">
-      <div className="relative">
+      <motion.div className="relative"
+      initial={{y:0,x:50,opacity:0}}
+      whileInView={{y:0,x:0,opacity:1}}
+      transition={{duration:1,delay:1,ease:'easeInOut'}}
+      >
         <Image
           src={cow}
           alt="moo"
@@ -32,8 +36,12 @@ const Moo = () => {
           />
         </svg>
         <div className="absolute w-28 md:h-4 sm:h-3 h-2 left-0 md:top-0 -top-6 bg-white"></div>
-      </div>
-      <div className="relative lg:h-full lg:w-3/5 md:h-5/6 h-4/6 w-1/2 flex justify-center items-center">
+      </motion.div>
+      <motion.div className="relative lg:h-full lg:w-3/5 md:h-5/6 h-4/6 w-1/2 flex justify-center items-center"
+      initial={{y:0,x:50,opacity:0}}
+      whileInView={{y:0,x:0,opacity:1}}
+      transition={{duration:1,delay:0.2,ease:'easeInOut'}}
+      >
         <Image
           src={glass}
           alt="Glass"
@@ -57,10 +65,14 @@ const Moo = () => {
           </div>
         </div>
         <GradientVer />
-      </div>
-      <div className="absolute z-10 text-white lg:bottom-10 lg:left-16 md:bottom-30 md:left-32  md:w-1/3 bottom-0 md:p-0 px-4 w-full md:text-right md:text-2xl text-xs text-center">
+      </motion.div>
+      <motion.div className="absolute z-10 text-white lg:bottom-10 lg:left-16 md:bottom-30 md:left-32  md:w-1/3 bottom-0 md:p-0 px-4 w-full md:text-right md:text-2xl text-xs text-center"
+      initial={{y:0,x:-50,opacity:0}}
+      whileInView={{y:0,x:0,opacity:1}}
+      transition={{duration:1,delay:0.2,ease:'easeInOut'}}
+      >
           <p>Our farm-fresh products, straight from happy cows, bring nature’s bounty to your table.</p>
-        </div>
+        </motion.div>
       <Gradient />
     </div>
   );
