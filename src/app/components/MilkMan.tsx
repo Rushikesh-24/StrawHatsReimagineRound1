@@ -12,7 +12,7 @@ const transition = { duration: 1, delay:0.5, ease: "easeInOut" }
 const MilkMan = () => {
 
   return (
-    <div className="lg:h-screen md:h-screen h-[60vh] flex justify-start items-center md:items-start relative my-10 sm:mx-0 mr-5">
+    <div className="lg:h-screen md:h-screen h-[60vh] flex justify-start items-center md:items-start relative my-10 sm:mx-0 mr-5" id="Career">
       <div className="relative lg:h-full md:h-5/6 h-4/6 w-1/2 flex justify-center items-center">
         <Image
           src={glass}

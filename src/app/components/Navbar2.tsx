@@ -4,7 +4,14 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Logo from "@/assets/amul.png";
 import Image from "next/image";
+import { Permanent_Marker } from "next/font/google";
+import Gradient from "./Gradient";
 
+const font = Permanent_Marker({
+  weight: ["400"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 const Navbar2 = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +41,7 @@ const Navbar2 = () => {
             className={`bg-gray-200 block transition-all duration-300 ease-out 
                       h-0.5 md:w-10 rounded-sm w-6 ${
                         isOpen
-                          ? "rotate-45 md:translate-y-2.5 translate-y-1 bg-gray-600"
+                          ? "rotate-45 md:translate-y-2.5 translate-y-1 bg-gray-200"
                           : "-translate-y-0.5"
                       }`}
           ></span>
@@ -48,7 +55,7 @@ const Navbar2 = () => {
             className={`bg-gray-200 block transition-all duration-300 ease-out 
                       h-0.5 md:w-10 rounded-sm w-6 ${
                         isOpen
-                          ? "-rotate-45 md:-translate-y-2.5 -translate-y-1 bg-gray-600"
+                          ? "-rotate-45 md:-translate-y-2.5 -translate-y-1 bg-gray-200"
                           : "translate-y-0.5"
                       }`}
           ></span>
@@ -60,53 +67,62 @@ const Navbar2 = () => {
               animate={{ opacity: 1, translateX: 0 }}
               exit={{ opacity: 0, translateX: -400 }}
               transition={{ duration: 0.5 }}
-              className="fixed inset-0 bg-gray-800 z-40 text-blue-600"
+              className="fixed inset-0 bg-[#0F165C] z-40 text-white"
             >
-              <div className="">
+              <div className={`${font.className} relative`}>
+                <Gradient/>
                 <ul className="flex flex-col items-center justify-center w-screen h-screen md:text-7xl text-5xl gap-7 md:gap-6 font-semibold md:font-normal">
                   <Link
-                    href="#"
+                    href="#About"
                     className={`mt-5 h-auto`}
                   >
                     <motion.li
-                      whileHover={{ scale: 1.2 }}
-                      transition={{ delay: 0.1, stiffness: 400, damping: 10 }}
+                      whileHover={{ scale: 1.2}}
+                      transition={{ delay: 0.3,duration:1, stiffness: 400, damping: 10 }}
+                      whileInView={{y:0,opacity:1}}
+                      initial={{y:20,opacity:0}}
                       onClick={handleClick}
                     > 
                       About Us
                     </motion.li>
                   </Link>
                   <Link
-                    href="#"
+                    href="#Brands"
                     className={`mt-5 h-auto`}
                   >
                     <motion.li
                       whileHover={{ scale: 1.2 }}
-                      transition={{ delay: 0.1, stiffness: 400, damping: 10 }}
+                      transition={{ delay: 0.3,duration:1, stiffness: 400, damping: 10 }}
+                      whileInView={{y:0,opacity:1}}
+                      initial={{y:20,opacity:0}}
                       onClick={handleClick}
                     >
                       All Brands
                     </motion.li>
                   </Link>
                   <Link
-                    href="#skills"
+                    href="#Career"
                     className={`mt-5 h-auto`}
                   >
                     <motion.li
                       whileHover={{ scale: 1.2 }}
-                      transition={{ delay: 0.1, stiffness: 400, damping: 10 }}
+                      transition={{ delay: 0.3,duration:1, stiffness: 400, damping: 10 }}
+                      whileInView={{y:0,opacity:1}}
+                      initial={{y:20,opacity:0}}
                       onClick={handleClick}
                     >
                       Careers
                     </motion.li>
                   </Link>
                   <Link
-                    href="#contact"
+                    href="#Campaigns"
                     className={`mt-5 h-auto`}
                   >
                     <motion.li
                       whileHover={{ scale: 1.2 }}
-                      transition={{ delay: 0.1, stiffness: 400, damping: 10 }}
+                      transition={{ delay: 0.3,duration:1, stiffness: 400, damping: 10 }}
+                      whileInView={{y:0,opacity:1}}
+                      initial={{y:20,opacity:0}}
                       onClick={handleClick}
                     >
                       Campaigns
@@ -114,6 +130,7 @@ const Navbar2 = () => {
                   </Link>
                 </ul>
               </div>
+              <Gradient/>
             </motion.div>
           )}
         </AnimatePresence>

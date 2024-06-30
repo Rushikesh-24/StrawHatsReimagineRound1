@@ -18,7 +18,7 @@ const koulen = Koulen({
 
 function OurStory() {
   return (
-    <section className="text-white text-lg md:text-xl pb-20 pt-10 w-full">
+    <section className="text-white text-lg md:text-xl pb-20 pt-10 w-full" id="About">
       <p className="text-center text-5xl md:text-7xl -mb-5">
         <span
           className={`${myFont.className} text-[10rem] md:text-[12rem] tracking-widest -mr-10`}

@@ -1,7 +1,7 @@
 function Gradient() {
     return (
       <svg
-      className="absolute size-fit -z-10"
+      className="absolute size-fit -z-10 blur-md"
         width="698"
         height="540"
         viewBox="0 0 698 540"

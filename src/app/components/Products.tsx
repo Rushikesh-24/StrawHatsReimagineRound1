@@ -15,7 +15,7 @@ import Gradient from './Gradient'
 
 function Products() {
   return (
-    <section className='text-white py-10 min-h-screen'>
+    <section className='text-white py-10 min-h-screen' id='Brands'>
         <p className='relative text-center text-5xl md:text-8xl font-light'>
             OVER <span className='font-bold bg-gradient-to-r bg-clip-text text-transparent from-[#283BF8] to-[#E9EBFF]'>27+</span> BRANDS
             <Image
