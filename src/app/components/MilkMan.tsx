@@ -36,9 +36,9 @@ const MilkMan = () => {
         </div>
       </motion.div>
       <motion.div className="relative"
-      initial={{y:0,x:-50,opacity:0}}
+      initial={{y:0,x:-60,opacity:0}}
       whileInView={{y:0,x:0,opacity:1}}
-      transition={{duration:1,delay:1,ease:'easeInOut'}}>
+      transition={{duration:1,delay:1.3,ease:'easeInOut'}}>
         <Image
           src={milkman}
           alt="moo"
