@@ -187,7 +187,7 @@ function GradientVer() {
       </g>
       <defs>
         <filter id="filter0_f_462_94" x="0.171875" y="0.171875" width="1079.66" height="1079.66" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+          <feFlood floodOpacity="0" result="BackgroundImageFix"/>
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
           <feGaussianBlur stdDeviation="176.414" result="effect1_foregroundBlur_462_94"/>
         </filter>

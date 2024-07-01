@@ -43,7 +43,7 @@ export const ModelViewer: React.FC = () => {
       <Canvas camera={{ position: [20, 46, 100], fov: 14 }}> 
         {/* Change this camera position for different position  */}
         <Suspense>
-          <ambientLight intensity={1.2} />
+          <ambientLight intensity={1} />
           <directionalLight position={[0, 1, 0]} intensity={5} />
           <MeshComponent />
         </Suspense>
