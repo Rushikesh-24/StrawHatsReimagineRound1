@@ -17,3 +17,19 @@ body{
     -0.5px 0.5px 0 white,
      0.5px 0.5px 0 white;
 }
+
+.anim-exit{
+    animation-name: exit-anim;
+    animation-duration: 2s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes exit-anim {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
