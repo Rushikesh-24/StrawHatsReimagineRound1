@@ -11,7 +11,7 @@ const Moo = () => {
   return (
     <div className="md:h-screen h-[60vh] w-full flex justify-end items-center md:items-start relative py-10 overflow-visible">
       <motion.div className="relative"
-      initial={{y:0,x:50,opacity:0}}
+      initial={{y:0,x:-50,opacity:0}}
       whileInView={{y:0,x:0,opacity:1}}
       transition={{duration:1,delay:1,ease:'easeInOut'}}
       >
@@ -38,7 +38,7 @@ const Moo = () => {
         <div className="absolute w-28 md:h-4 sm:h-3 h-2 left-0 md:top-0 -top-6 bg-white"></div>
       </motion.div>
       <motion.div className="relative lg:h-full lg:w-3/5 md:h-5/6 h-4/6 w-1/2 flex justify-center items-center"
-      initial={{y:0,x:50,opacity:0}}
+      initial={{y:0,x:-50,opacity:0}}
       whileInView={{y:0,x:0,opacity:1}}
       transition={{duration:1,delay:0.2,ease:'easeInOut'}}
       >

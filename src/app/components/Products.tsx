@@ -130,7 +130,7 @@ function Products() {
             <Gradient />
           </motion.a>
         </div>
-        <div className="absolute flex flex-col items-center justify-center right-0 bg-[#040A4F] !h-[8vw] !w-[8vw]">
+        <div className="absolute flex flex-col items-center justify-center -right-2 bg-[#040A4F] !h-[8vw] !w-[8vw]">
           <p className="text-5xl font-bold">20</p>
           <p className="text-xl font-light">others</p>
           <div className="w-full flex justify-between ml-5">

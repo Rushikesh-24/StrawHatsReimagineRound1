@@ -17,7 +17,7 @@ const MilkMan = () => {
     >
       <motion.div
         className="relative lg:h-full md:h-5/6 h-4/6 w-1/2 flex justify-center items-center"
-        initial={{ y: 0, x: -50, opacity: 0 }}
+        initial={{ y: 0, x: 50, opacity: 0 }}
         whileInView={{ y: 0, x: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}
       >
@@ -40,7 +40,7 @@ const MilkMan = () => {
       </motion.div>
       <motion.div
         className="relative"
-        initial={{ y: 0, x: -50, opacity: 0 }}
+        initial={{ y: 0, x: 50, opacity: 0 }}
         whileInView={{ y: 0, x: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 1, ease: "easeInOut" }}
       >
