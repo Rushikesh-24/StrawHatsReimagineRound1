@@ -51,7 +51,7 @@ export const CardStack = ({
         return (
           <motion.div
             key={card.id}
-            className="absolute sm:h-60 h-52 sm:w-60 w-32 lg:h-[60vh] md:h-72 lg:w-80 md:w-52 rounded-3xl overflow-hidden shadow-2xl shadow-[#03062A] flex flex-col justify-between"
+            className="absolute sm:h-60 h-52 sm:w-40 w-32 lg:h-[60vh] md:h-72 lg:w-80 md:w-52 rounded-3xl overflow-y-hidden shadow-2xl shadow-[#03062A] flex flex-col justify-between"
             animate={{
               right: index * -CARD_OFFSET,
               scale: 1 - index * SCALE_FACTOR,
