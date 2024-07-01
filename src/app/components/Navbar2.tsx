@@ -75,7 +75,7 @@ const Navbar2 = () => {
               transition={{ duration: 0.5 }}
               className="fixed inset-0 bg-[#0F165C] z-40 text-white"
             >
-              <div className={`${font.className} relative`}>
+              <div className={` relative`}>
                 <Gradient/>
                 <ul className="flex flex-col items-center justify-center w-screen h-screen md:text-7xl text-5xl gap-7 md:gap-6 font-semibold md:font-normal">
                   <Link
