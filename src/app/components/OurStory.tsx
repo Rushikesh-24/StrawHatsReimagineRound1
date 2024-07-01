@@ -41,7 +41,7 @@ function OurStory() {
               height={Tribhuvandas.height}
               width={Tribhuvandas.width}
               alt="Tribhuvandas Patel"
-              className="lg:mt-16 -mt-12 lg:rounded-full"
+              className="lg:mt-[4.5rem] -mt-12 lg:rounded-full"
             />
             <GradientTri />
             <div>
@@ -114,7 +114,7 @@ function OurStory() {
 function GradientTri() {
   return (
     <svg
-      className="absolute hidden lg:block top-[35%]"
+      className="absolute hidden top-[55%]"
       width="503"
       height="352"
       viewBox="0 0 579 493"
