@@ -15,6 +15,15 @@ import Gradient from "./Gradient";
 import ProductItem from "./ProductClient";
 import { easeInOut, motion } from "framer-motion";
 
+let nvalues = {
+  icecream: ["Energy: 115 kcal", "Fat: 7.1 g (Saturated fat: 4.9 g)", "Cholesterol: 18.9 mg", "Carbohydrates: 10.7 g (Added sugar: 8.0 g)", "Protein: 2.0 g", "Calcium: 95.0 mg"],
+  butter: [ "Energy: 722 kcal","Total Fat: 80 g", "Saturated fat: 51 g", "Cholesterol: 180 mg","Sodium: 836 mg"],
+  paneer: ["Energy: 314 kcal", "Total Fat: 25 g", "Saturated Fat: 15 g", "Trans Fat: 0 g", "Cholesterol: 65 mg"],
+  cheese: ["Calories: 311 kcal", "Carbohydrates: 1.5 g", "Sugar: 1.5 g", "Fat: 25 g (Saturated fat: 16 g)", "Protein: 20 g", "Sodium: 1200 mg"],
+  lassi: ["Energy: 87 kcal", "Fat: 2.0 g", "Saturated fat: 1.2 g", "Cholesterol: 6 mg", "Carbohydrates: 14.0 g", "Protein: 2.0 g", "Sodium: 26 mg", "Calcium: 80 mg"],  
+  milk: ["Energy: 58 kcal", "Total Fat: 3.0 g", "Total Carbohydrate: 4.7 g", "Added Sugar: 0.0 g", "Protein: 3.0 g", "Calcium: 110 mg"],
+  dahi:["Energy: 57.2 Kcal", "Total Fat: 3.1 g (Saturated Fat: 2.0 g, Trans Fat: 0 g)", "Total Carbohydrate: 3.8 g", "Added Sugar: 0.0 g", "Protein: 3.5 g", "Calcium: 120 mg"]
+}
 function Products() {
   return (
     <section className="text-white py-10 min-h-screen" id="Brands">
@@ -51,37 +60,51 @@ function Products() {
         <ProductItem
           img={Lassi}
           text="LASSI"
+          info="Amul Lassi is a refreshing milk-based natural drink that combines the goodness of milk solids with delightful flavors. Amul Lassi is a convenient and tasty natural drink suitable for all age groups."
+          nvalues = {nvalues.lassi}
           style="text-3xl !gap-1 text-[#040A4F] !bg-[#040A4F] left-[22%] top-[15%] !h-[13vw] !w-[13vw]"
         />
         <ProductItem
           img={Cheese}
           text="CHEESE"
+          info="Amul Processed Cheese is made from graded cow/buffalo milk using microbial rennet. Amul Processed Cheese is perfect for snacking, melting in dishes like soups and sauces, and pairing with fruits."
+          nvalues = {nvalues.cheese}
           style="text-3xl !gap-1 text-[#4450E0] !bg-[#4450E0] left-[38%] top-[15%] !h-[15vw] !w-[15vw]"
         />
         <ProductItem
           img={Paneer}
           text="PANEER"
+          info="Amul Fresh Paneer is a popular Indian cottage cheese made from pure milk. Amul Fresh Paneer is a popular Indian cottage cheese made from pure milk."
+          nvalues = {nvalues.paneer}
           style="text-xl !gap-1 text-[#1627E3] left-[56%] top-[45%] !h-[11vw] !w-[11vw]"
         />
         <ProductItem
           img={Butter}
           text="BUTTER"
+          info="Amul Butter is an iconic dairy product in India, known for its rich taste and quality. Amul Butter is synonymous with breakfast tables across Indian households."
+          nvalues = {nvalues.butter}
           style="text-4xl text-[#1D2BCF] !bg-[#1D2BCF] left-[70%] top-[15%] !h-[20vw] !w-[20vw]"
         />
 
         <ProductItem
           img={Milk}
           text="MILK"
+          info="Amul Taaza is a fresh toned milk produced by Amul, one of India’s leading dairy cooperatives. Suitable for direct consumption, making tea or coffee, preparing khoa, and curd."
+          nvalues = {nvalues.milk}
           style="text-5xl text-[#1D2BCF] !bg-[#1D2BCF] left-[32%] top-[90%] !h-[15vw] !w-[15vw]"
         />
         <ProductItem
           img={Dahi}
           text="DAHI"
+          info="Amul Masti Dahi is a traditional Indian curd made from pasteurized toned milk. Versatile for various culinary uses, including Kadhi, Raita, Biryani, and desserts"
+          nvalues={nvalues.dahi}
           style="text-4xl !gap-1 text-[#040A4F] !bg-[#040A4F] left-[18%] top-[99%] !h-[14vw] !w-[14vw]"
         />
         <ProductItem
           img={IceCream}
           text="ICE-CREAM"
+          info="Amul Ice Cream is utterly delicious and made from fresh milk. It’s available in a wide range of flavors and various pack sizes, including cones, cups, plastic containers, and sticks."
+          nvalues = {nvalues.icecream}
           style="text-3xl text-[#040A4F] !bg-[#040A4F] left-[52%] top-[85%] !h-[20vw] !w-[20vw]"
         />
         <div className="absolute right-10 top-[150%]">
