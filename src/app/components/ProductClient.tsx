@@ -45,7 +45,8 @@ export default function ProductItem({style, text, info, nvalues, img}:{style:str
           <motion.div onClick={(e)=>{ setScale(1) }}  initial={{right:"100%"}} animate={{right:"0%"}} className={'duration-[2s] delay-[0.6s] text-black fixed p-7 top-0 z-[100] md:h-[100vh] md:w-[50vw] bg-white'}>
               <p className='text-6xl font-semibold'>{text}</p>
               <p className='mt-5'>{info}</p>
-              <p className='mt-5'>Nutritional Values</p>
+              <p className='mt-5 font-bold'>Nutritional Values</p>
+              <br />
               <ul>
                 {
                   nvalues?.map((nvalue, i)=>(
