@@ -33,8 +33,8 @@ export default function ProductItem({style, text, info, nvalues, img}:{style:str
             <div className={`absolute ${text === "THE TASTE OF INDIA" && "left-0 bottom-0"} ${scale === 3 && "w-full h-full flex items-center justify-center"}`}>
                 <Image
                     src={img.src}
-                    height={scale === 1 ? img.height-40 : img.height}
-                    width={scale === 1 ? img.width-40 : img.width}
+                    height={scale == 1 && text == 'CHEESE'? img.height/30 :scale === 1 ? img.height-40 : img.height}
+                    width={scale == 1 && text == 'CHEESE'? img.width/25 : scale === 1 ? img.width-40 : img.width}
                     alt=""
                     className={`${scale === 3 && "w-1/2  object-cover"}`}
                 />

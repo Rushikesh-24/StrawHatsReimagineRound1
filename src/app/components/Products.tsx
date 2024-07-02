@@ -2,12 +2,12 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import AmulGirl from "@/assets/amulgirl.png";
+import AmulGirl from "@/assets/amulgirl1.png";
 import Lassi from "@/assets/lassi.png";
-import Cheese from "@/assets/cheese.png";
-import Paneer from "@/assets/Paneer.png";
-import Butter from "@/assets/butter.png";
-import Dahi from "@/assets/dahi.png";
+import Cheese from "@/assets/cheese1.png";
+import Paneer from "@/assets/paneer1.png";
+import Butter from "@/assets/butter1.png";
+import Dahi from "@/assets/dahi1.png";
 import Milk from "@/assets/milk.png";
 import IceCream from "@/assets/icecream.png";
 import Texture from "@/assets/texture.png";

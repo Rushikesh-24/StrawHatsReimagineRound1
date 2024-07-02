@@ -3,7 +3,7 @@ import React from "react";
 import { TextGenerateEffect } from "./TextGenerate";
 import Image from "next/image";
 import Lassi from "@/assets/lassi.png";
-import Butter from "@/assets/butter.png";
+import Butter from "@/assets/butter1.png";
 import Milk from "@/assets/milk.png";
 import IceCream from "@/assets/icecream.png";
 import glassOfMilk from "@/assets/glassOfMilk.png";
