@@ -27,16 +27,16 @@ export default function ProductItem({style, text, info, nvalues, img}:{style:str
         >
             {
                 Array.from(new Array(5)).map((num, i)=>(
-                    <p key={i} className={`${classNames[classIndex]} font-bold tracking-widest ${i % 2 !== 0 && classNames[classIndex]} text-center ${text === 'THE TASTE OF INDIA' ? 'text-[0.55rem] sm:text-[0.85rem] md:text-xs lg:text-base line-clamp-1 tracking-tighter w-full leading-3 sm:leading-6 lg:leading-10' : ''}`}>{text}</p>
+                    <p key={i} className={`${classNames[classIndex]} font-bold tracking-widest ${i % 2 !== 0 && classNames[classIndex]} text-center ${text === 'THE TASTE OF INDIA' ? 'text-[0.55rem] sm:text-[0.85rem] md:text-xs lg:text-base line-clamp-1 tracking-tighter w-full leading-3 sm:leading-6 lg:leading-10' : ''} ${scale === 3 && "text-[3rem] sm:text-[4rem] md:text-[5rem] lg:text-[6rem] leading-snug"}`}>{text}</p>
                 ))
             }
-            <div className={`absolute ${text === "THE TASTE OF INDIA" && "left-0 bottom-0"}`}>
+            <div className={`absolute ${text === "THE TASTE OF INDIA" && "left-0 bottom-0"} ${scale === 3 && "w-full h-full flex items-center justify-center"}`}>
                 <Image
                     src={img.src}
                     height={scale === 1 ? img.height-40 : img.height}
                     width={scale === 1 ? img.width-40 : img.width}
                     alt=""
-                    className=''
+                    className={`${scale === 3 && "w-1/2  object-cover"}`}
                 />
             </div>
         </motion.div>
